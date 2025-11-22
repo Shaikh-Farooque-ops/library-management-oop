@@ -29,7 +29,14 @@ public class AudioBook extends Item {
 
 	@Override
 	public void displayDetails() {
-
+		
+		System.out.println("ID: " + getId());
+	    System.out.println("Title: " + getTitle());
+	    System.out.println("Author: " + getAuthor());
+	    System.out.println("Available: " + isAvailable());
+		
+		System.out.println("AudioBook Duration :" + getDuration());
+		System.out.println("AudioBook Narrtor :" + getNarrator());
 	}
 
 }

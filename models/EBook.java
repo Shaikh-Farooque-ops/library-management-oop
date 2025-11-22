@@ -29,7 +29,14 @@ public class EBook extends Item {
 
 	@Override
 	public void displayDetails() {
+		
+		System.out.println("ID: " + getId());
+	    System.out.println("Title: " + getTitle());
+	    System.out.println("Author: " + getAuthor());
+	    System.out.println("Available: " + isAvailable());
 
+		System.out.println("EBook File Size :" + getFileSize());
+		System.out.println("EBook Format :" + getFormat());
 	}
 
 }
