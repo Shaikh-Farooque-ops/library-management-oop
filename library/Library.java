@@ -27,7 +27,7 @@ public class Library {
 			item.markAsAvailable();
 			items[itemCount] = item;
 			itemCount++;
-			System.out.println("Item " + item.getTitle() + " added successfully");
+			System.out.println("Item \"" + item.getTitle() + "\" added successfully");
 		}
 		
 		else
@@ -41,7 +41,7 @@ public class Library {
 		{
 			members[memberCount] = member;
 			memberCount++;
-			System.out.println("Member Registered successfully");
+			System.out.println("Member \"" + member.getName() + "\" Registered successfully");
 		}
 		
 		else
@@ -103,7 +103,7 @@ public class Library {
 		
 		// Issue item
 		member.borrowItem(item);
-		System.out.println("Item " + item.getTitle() + " issued successfully by " + member.getName());
+		System.out.println("Item \"" + item.getTitle() + "\" issued successfully to " + member.getName());
 	}
 	
 	// return item
@@ -134,7 +134,6 @@ public class Library {
 		
 		// return item
 		member.returnItem(item);
-		System.out.println("Item " + item.getTitle() + " returned successfully by " + member.getName());
 	}
 	
 	// Print all items in the library

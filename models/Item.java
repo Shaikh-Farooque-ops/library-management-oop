@@ -65,7 +65,7 @@ public abstract class Item {
 
 	@Override
 	public String toString() {
-		return "Item [ID: " + id + "| Title: " + title + "| Author: " + author + "| Available: " + isAvailable + "]";
+		return "Item [ID: " + id + ", Title: " + title + ", Author: " + author + ", Available: " + isAvailable + "]";
 	}
 	
 }

@@ -10,21 +10,14 @@ public class Member {
 	private Item[] borrowedItems;
 	private int borrowedCount;
 	
-
-	public Member() {
-		super();
-		borrowedItems = new Item[5];
-	}
-	
-	public Member(int memberId, String name, String email, Item[] borrowedItems, int borrowedCount) {
+	public Member(int memberId, String name, String email) {
 		super();
 		this.memberId = memberId;
 		this.name = name;
 		this.email = email;
-		this.borrowedItems = borrowedItems;
-		this.borrowedCount = borrowedCount;
+		this.borrowedItems = new Item[5];
+		this.borrowedCount = 0;
 	}
-
 
 	public int getMemberId() {
 		return memberId;
@@ -65,7 +58,6 @@ public class Member {
 			borrowedItems[borrowedCount] = item;
 			borrowedCount++;
 			item.markAsUnavailable();
-			System.out.println("Item borrowed successfully");
 		}
 		
 		else
@@ -97,7 +89,7 @@ public class Member {
 		
 		if(found)
 		{
-			System.out.println("Item " + item.getTitle() + " returned successfully");
+			System.out.println("Item \"" + item.getTitle() + "\" returned successfully by " + getName());
 		}
 		
 		else
