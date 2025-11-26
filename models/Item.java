@@ -54,13 +54,18 @@ public abstract class Item {
 	public void markAsAvailable()
 	{
 		isAvailable = true;
-	};
+	}
 	
 	public void markAsUnavailable()
 	{
 		isAvailable = false;
-	};
+	}
 	
 	public abstract void displayDetails();
+
+	@Override
+	public String toString() {
+		return "Item [ID: " + id + "| Title: " + title + "| Author: " + author + "| Available: " + isAvailable + "]";
+	}
 	
 }
