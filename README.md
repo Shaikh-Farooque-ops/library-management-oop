@@ -199,3 +199,20 @@ classDiagram
 - Add due dates and fine calculation for overdue items
 - Include file/database persistence to store library data permanently
 - Enhance UI with a GUI or web interface
+
+## 📸 Screenshots - Output Console
+
+### Library Menu & Sample Output
+![Screenshot 1](https://github.com/Shaikh-Farooque-ops/library-management-oop/raw/main/images/Screenshot%202025-11-26%20184803.png)
+
+### Issuing Items
+![Screenshot 2](https://github.com/Shaikh-Farooque-ops/library-management-oop/raw/main/images/Screenshot%202025-11-26%20184817.png)
+
+### Returning Items
+![Screenshot 3](https://github.com/Shaikh-Farooque-ops/library-management-oop/raw/main/images/Screenshot%202025-11-26%20184858.png)
+
+### Viewing All & Available Items
+![Screenshot 4](https://github.com/Shaikh-Farooque-ops/library-management-oop/raw/main/images/Screenshot%202025-11-26%20184908.png)
+
+### Exit & Final Menu
+![Screenshot 5](https://github.com/Shaikh-Farooque-ops/library-management-oop/raw/main/images/Screenshot%202025-11-26%20184916.png)
