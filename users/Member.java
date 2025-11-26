@@ -15,6 +15,16 @@ public class Member {
 		super();
 		borrowedItems = new Item[5];
 	}
+	
+	public Member(int memberId, String name, String email, Item[] borrowedItems, int borrowedCount) {
+		super();
+		this.memberId = memberId;
+		this.name = name;
+		this.email = email;
+		this.borrowedItems = borrowedItems;
+		this.borrowedCount = borrowedCount;
+	}
+
 
 	public int getMemberId() {
 		return memberId;
@@ -87,7 +97,7 @@ public class Member {
 		
 		if(found)
 		{
-			System.out.println("Item returned successfully");
+			System.out.println("Item " + item.getTitle() + " returned successfully");
 		}
 		
 		else
