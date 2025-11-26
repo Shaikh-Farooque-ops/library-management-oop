@@ -30,6 +30,8 @@ public class AudioBook extends Item {
 	@Override
 	public void displayDetails() {
 		
+		System.out.println(" ----- AUDIOBOOK DETAILS -----");
+		
 		System.out.println("ID: " + getId());
 	    System.out.println("Title: " + getTitle());
 	    System.out.println("Author: " + getAuthor());

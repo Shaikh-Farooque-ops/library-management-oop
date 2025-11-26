@@ -30,6 +30,8 @@ public class EBook extends Item {
 	@Override
 	public void displayDetails() {
 		
+		System.out.println(" ----- EBOOK DETAILS -----");
+		
 		System.out.println("ID: " + getId());
 	    System.out.println("Title: " + getTitle());
 	    System.out.println("Author: " + getAuthor());

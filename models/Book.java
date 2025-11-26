@@ -30,6 +30,8 @@ public class Book extends Item {
 	@Override
 	public void displayDetails() {
 
+		System.out.println(" ----- BOOK DETAILS -----");
+		
 		System.out.println("ID: " + getId());
 	    System.out.println("Title: " + getTitle());
 	    System.out.println("Author: " + getAuthor());
